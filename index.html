@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,28 +12,120 @@
     <title>Tela de Cadastro de Clientes</title>
   </head>
   <body>
-    <form class="container">
-      <div class="card">
-        <h1>Cadastrar</h1>
-        <div class="label-float">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
-        </div>
-        <div class="label-float">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" />
-        </div>
-        <div class="label-float">
-          <label for="senha">Senha</label>
-          <input type="password" id="senha" />
-        </div>
-        <div class="label-float">
-          <label for="confirmSenha">Confirma Senha</label>
-          <input type="password" id="confirmaSenha" />
-        </div>
-        <button>Cadastrar</button>
+    <div class="container">
+      <div class="form-image">
+        <img src="assets/img/undraw_friends_r511.png" />
       </div>
-    </form>
+      <div class="form">
+        <form action="#">
+          <div class="form-header">
+            <div class="title">
+              <h1>Cadastrar Clientes</h1>
+            </div>
+
+            <div class="input-group">
+              <div class="input-box">
+                <label for="name">Nome Proprietário</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Digite o nome do Proprietário"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="phone">Numero de celular</label>
+                <input
+                  id="number"
+                  type="tel"
+                  name="number"
+                  placeholder="(xx) xxxx-xxxx"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email do proprietário"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="name-pet">Nome do Pet</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Nome do Pet"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+              <label for="pet-breed">Raça</label>
+              <input
+                id="pet-breed"
+                type="text"
+                name="pet-breed"
+                placeholder="Raça do Pet"
+                required
+              />
+            </div>
+
+           <div class="input-box">
+            <label>Espécie</a>
+              <select name="species">
+                  <option value="canina">Canina</option>
+                  <option value="felina">Felina</option>
+              </select>
+            </div>
+
+            <div class="gender-group">
+              <div class="gender-input">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Macho</label>
+              </div>
+
+              <div class="gender-group">
+                <div class="gender-input">
+                  <input type="radio" id="female" name="gender">
+                  <label for="female">Fêmea</label>
+                </div>
+
+              <div class="input-box">
+                <label for="date">Data de nascimento do pet:</label>
+                <input
+                  id="date"
+                  type="date"
+                  name="birth-date"
+                  placeholder="Data de nascimento do pet"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label type="text" id="text" name="message" ></label>
+                <textarea id="txt2" placeholder="Observações do pet"></textarea>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+        <button>Cadastrar</button>
+
+        <!-- <div class="login-button">
+          <button><a href="#"></a>Entrar</button>
+        </div> -->
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
