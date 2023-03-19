@@ -8,7 +8,7 @@
 
 O Projeto Todo foi desenvolvido para praticar como desafio da Comunidade Code.
 
-### Link do projeto:
+### Link do projeto: https://tela-de-cadastro-pets.netlify.app/
 
 ### 🛠 Tecnologias
 
