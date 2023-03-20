@@ -6,7 +6,8 @@
 
 ## Sobre o Projeto
 
-O Projeto Todo foi desenvolvido para praticar como desafio da Comunidade Code.
+O Projeto foi desenvolvido para praticar e reforçar meus conhecimentos em validação de formulário como desafio da Comunidade Code.
+Ainda falta armazenar os dados que ficará para uma nova feature.
 
 ### Link do projeto: https://tela-de-cadastro-pets.netlify.app/
 

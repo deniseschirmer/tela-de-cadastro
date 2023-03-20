@@ -1,38 +1,33 @@
-let name = document.querySelector("#name");
-let labelName = document.querySelector("#labelName");
-let validName = false;
-
+let nameCli = document.querySelector("#name");
 let petName = document.querySelector("#petName");
-let labelPetName = document.querySelector("#labelPetName");
-let validPetName = false;
-
 let email = document.querySelector("#email");
-let labelEmail = document.querySelector("#labelEmail");
-let validEmail = false;
-
 let number = document.querySelector("#number");
-let labelNumber = document.querySelector("#labelNumber");
-let validNumber = false;
-
 let race = document.querySelector("#race");
-let labelRace = document.querySelector("#labelRace");
-let validRace = false;
-
 let species = document.querySelector("#species");
-let labelSpecies = document.querySelector("#labelSpecies");
-let validSpecies = false;
 
-labelName.addEventListener("keyup", () => {
-  if (labelName.value.length <= 2) {
-    labelName.setAttribute("style", "color:red");
-  } else {
-    labelName.setAttribute("style", "color:green");
-  }
+let listener = document.querySelectorAll(".listener");
+
+listener.forEach((v) => {
+  v.addEventListener("keyup", () => {
+    if (v.value.length <= 2) {
+      v.setAttribute("style", "color:red");
+    } else {
+      v.setAttribute("style", "color:green");
+    }
+  });
 });
 
 function cadastrar() {
-  if (validName || validPetName || validEmail || validNumber || validRace) {
+  if (
+    nameCli.value.length > 0 &&
+    petName.value.length > 0 &&
+    email.value.length > 0 &&
+    number.value.length > 0 &&
+    race.value.length > 0 &&
+    species.value.length > 0
+  ) {
+    alert("funcionou");
   } else {
-    alert("Esta tudo vazio");
+    alert("Preencha todos os campos");
   }
 }
