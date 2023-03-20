@@ -7,7 +7,7 @@
 ## Demo 📸
 
 <div align="center" >
-   <img src="assets/teladecadastro.png" alt="demo-mobile" height="425">
+   <img src="assets/img/teladecadastro.png" alt="demo-mobile" height="425">
 </div>
  ---
 
